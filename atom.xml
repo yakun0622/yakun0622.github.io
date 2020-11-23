@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-11-23T09:48:56.000Z</updated>
+  <updated>2020-11-23T09:52:19.000Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>calibre-web 豆瓣API失效解决</title>
+    <link href="http://example.com/2020/11/23/calibre-web-%E8%B1%86%E7%93%A3API%E5%A4%B1%E6%95%88%E8%A7%A3%E5%86%B3/"/>
+    <id>http://example.com/2020/11/23/calibre-web-%E8%B1%86%E7%93%A3API%E5%A4%B1%E6%95%88%E8%A7%A3%E5%86%B3/</id>
+    <published>2020-11-23T09:49:25.000Z</published>
+    <updated>2020-11-23T09:52:19.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;网上常见的 apikey &lt;code&gt;0df993c66c0c636e29ecbb5344252a4a&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="calibre" scheme="http://example.com/tags/calibre/"/>
+    
+  </entry>
   
   <entry>
     <title>pm2运行Python</title>
