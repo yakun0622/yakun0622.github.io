@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-11-23T08:33:01.000Z</updated>
+  <updated>2020-11-23T09:39:25.000Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,10 +21,12 @@
     <link href="http://example.com/2020/11/23/my-first-blog/"/>
     <id>http://example.com/2020/11/23/my-first-blog/</id>
     <published>2020-11-23T08:33:01.000Z</published>
-    <updated>2020-11-23T08:33:01.000Z</updated>
+    <updated>2020-11-23T09:39:25.000Z</updated>
     
     
     
+    
+    <category term="docker" scheme="http://example.com/categories/docker/"/>
     
     
   </entry>
