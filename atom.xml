@@ -3,11 +3,11 @@
   <title>Yakun&#39;s blogs</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://github.com/yakun0622/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2020-11-23T09:59:17.000Z</updated>
-  <id>http://example.com/</id>
+  <link href="https://github.com/yakun0622/"/>
+  <updated>2020-11-23T10:15:31.000Z</updated>
+  <id>https://github.com/yakun0622/</id>
   
   <author>
     <name>Yakun</name>
@@ -17,9 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo--分离文章标题和文件名</title>
+    <link href="https://github.com/yakun0622/2020/11/23/1-hexo-1/"/>
+    <id>https://github.com/yakun0622/2020/11/23/1-hexo-1/</id>
+    <published>2020-11-23T10:12:58.000Z</published>
+    <updated>2020-11-23T10:15:31.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;默认情况下，hexo生成的文章标题，也会作为文件名，同时也会作为url路径的一部分&lt;br&gt;这对于中文的编码问题也是件头痛的事情&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Hexo官方文档说明:&lt;/p&gt;
+&lt;figure</summary>
+        
+      
+    
+    
+    
+    <category term="Hexo" scheme="https://github.com/yakun0622/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://github.com/yakun0622/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>centos7 yum安装MySQL5.6</title>
-    <link href="http://example.com/2020/11/23/centos7-yum%E5%AE%89%E8%A3%85MySQL5-6/"/>
-    <id>http://example.com/2020/11/23/centos7-yum%E5%AE%89%E8%A3%85MySQL5-6/</id>
+    <link href="https://github.com/yakun0622/2020/11/23/centos7-yum%E5%AE%89%E8%A3%85MySQL5-6/"/>
+    <id>https://github.com/yakun0622/2020/11/23/centos7-yum%E5%AE%89%E8%A3%85MySQL5-6/</id>
     <published>2020-11-23T09:58:14.000Z</published>
     <updated>2020-11-23T09:59:17.000Z</updated>
     
@@ -37,21 +66,21 @@
     
     
     
-    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    <category term="Linux" scheme="https://github.com/yakun0622/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    <category term="Linux" scheme="https://github.com/yakun0622/tags/Linux/"/>
     
-    <category term="mysql" scheme="http://example.com/tags/mysql/"/>
+    <category term="mysql" scheme="https://github.com/yakun0622/tags/mysql/"/>
     
-    <category term="centos" scheme="http://example.com/tags/centos/"/>
+    <category term="centos" scheme="https://github.com/yakun0622/tags/centos/"/>
     
   </entry>
   
   <entry>
     <title>calibre-web 豆瓣API失效解决</title>
-    <link href="http://example.com/2020/11/23/calibre-web-%E8%B1%86%E7%93%A3API%E5%A4%B1%E6%95%88%E8%A7%A3%E5%86%B3/"/>
-    <id>http://example.com/2020/11/23/calibre-web-%E8%B1%86%E7%93%A3API%E5%A4%B1%E6%95%88%E8%A7%A3%E5%86%B3/</id>
+    <link href="https://github.com/yakun0622/2020/11/23/calibre-web-%E8%B1%86%E7%93%A3API%E5%A4%B1%E6%95%88%E8%A7%A3%E5%86%B3/"/>
+    <id>https://github.com/yakun0622/2020/11/23/calibre-web-%E8%B1%86%E7%93%A3API%E5%A4%B1%E6%95%88%E8%A7%A3%E5%86%B3/</id>
     <published>2020-11-23T09:49:25.000Z</published>
     <updated>2020-11-23T09:54:13.000Z</updated>
     
@@ -66,17 +95,17 @@
     
     
     
-    <category term="NAS" scheme="http://example.com/categories/NAS/"/>
+    <category term="NAS" scheme="https://github.com/yakun0622/categories/NAS/"/>
     
     
-    <category term="calibre" scheme="http://example.com/tags/calibre/"/>
+    <category term="calibre" scheme="https://github.com/yakun0622/tags/calibre/"/>
     
   </entry>
   
   <entry>
     <title>pm2运行Python</title>
-    <link href="http://example.com/2020/11/23/pm2%E8%BF%90%E8%A1%8CPython/"/>
-    <id>http://example.com/2020/11/23/pm2%E8%BF%90%E8%A1%8CPython/</id>
+    <link href="https://github.com/yakun0622/2020/11/23/pm2%E8%BF%90%E8%A1%8CPython/"/>
+    <id>https://github.com/yakun0622/2020/11/23/pm2%E8%BF%90%E8%A1%8CPython/</id>
     <published>2020-11-23T09:48:08.000Z</published>
     <updated>2020-11-23T09:48:56.000Z</updated>
     
@@ -93,14 +122,14 @@
     
     
     
-    <category term="pm2" scheme="http://example.com/tags/pm2/"/>
+    <category term="pm2" scheme="https://github.com/yakun0622/tags/pm2/"/>
     
   </entry>
   
   <entry>
     <title>docker permission denied</title>
-    <link href="http://example.com/2020/11/23/docker-permission-denied/"/>
-    <id>http://example.com/2020/11/23/docker-permission-denied/</id>
+    <link href="https://github.com/yakun0622/2020/11/23/docker-permission-denied/"/>
+    <id>https://github.com/yakun0622/2020/11/23/docker-permission-denied/</id>
     <published>2020-11-23T09:42:53.000Z</published>
     <updated>2020-11-23T09:53:59.000Z</updated>
     
@@ -117,10 +146,10 @@
     
     
     
-    <category term="docker" scheme="http://example.com/categories/docker/"/>
+    <category term="docker" scheme="https://github.com/yakun0622/categories/docker/"/>
     
     
-    <category term="docker" scheme="http://example.com/tags/docker/"/>
+    <category term="docker" scheme="https://github.com/yakun0622/tags/docker/"/>
     
   </entry>
   
