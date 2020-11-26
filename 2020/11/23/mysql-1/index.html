@@ -59,9 +59,7 @@
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Yakun's blogs" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.2.0"></head>
 
 
 <body>
@@ -186,7 +184,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      142 字
+      108 字
     </span>
   
 
@@ -196,7 +194,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      2
+      1
        分钟
     </span>
   
@@ -232,44 +230,44 @@
               <ol>
 <li>下载wget包管理工具</li>
 </ol>
-<pre class="line-numbers language-hljs powershell">yum <span class="hljs-literal">-y</span> install <span class="hljs-built_in"><code class="language-hljs powershell">yum <span class="hljs-literal">-y</span> install <span class="hljs-built_in">wget</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre><code class="hljs powershell">yum <span class="hljs-literal">-y</span> install <span class="hljs-built_in">wget</span></code></pre>
 
 <ol start="2">
 <li>下载mysql的rpm包</li>
 </ol>
-<pre class="line-numbers language-hljs powershell"><span class="hljs-built_in">wget</span> http://repo.mysql.com/mysql<span class="hljs-literal">-community</span><span class="hljs-literal">-release</span><span class="hljs-literal">-el7</span><span class="hljs-literal"><code class="language-hljs powershell"><span class="hljs-built_in">wget</span> http://repo.mysql.com/mysql<span class="hljs-literal">-community</span><span class="hljs-literal">-release</span><span class="hljs-literal">-el7</span><span class="hljs-literal">-5</span>.noarch.rpm<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre><code class="hljs powershell"><span class="hljs-built_in">wget</span> http://repo.mysql.com/mysql<span class="hljs-literal">-community</span><span class="hljs-literal">-release</span><span class="hljs-literal">-el7</span><span class="hljs-literal">-5</span>.noarch.rpm</code></pre>
 
 <ol start="3">
 <li>解压rpm包</li>
 </ol>
-<pre class="line-numbers language-hljs powershell">rpm <span class="hljs-literal">-ivh</span> mysql<span class="hljs-literal">-community</span><span class="hljs-literal">-release</span><span class="hljs-literal">-el7</span><span class="hljs-literal"><code class="language-hljs powershell">rpm <span class="hljs-literal">-ivh</span> mysql<span class="hljs-literal">-community</span><span class="hljs-literal">-release</span><span class="hljs-literal">-el7</span><span class="hljs-literal">-5</span>.noarch.rpm<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre><code class="hljs powershell">rpm <span class="hljs-literal">-ivh</span> mysql<span class="hljs-literal">-community</span><span class="hljs-literal">-release</span><span class="hljs-literal">-el7</span><span class="hljs-literal">-5</span>.noarch.rpm</code></pre>
 
 <ol start="4">
 <li>安装mysql服务</li>
 </ol>
-<pre class="line-numbers language-hljs powershell">yum <span class="hljs-literal">-y</span> install mysql<span class="hljs-literal"><code class="language-hljs powershell">yum <span class="hljs-literal">-y</span> install mysql<span class="hljs-literal">-server</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre><code class="hljs powershell">yum <span class="hljs-literal">-y</span> install mysql<span class="hljs-literal">-server</span></code></pre>
 
 <ol start="5">
 <li>启动mysql，开机自启</li>
 </ol>
-<pre class="line-numbers language-hljs powershell">systemctl <span class="hljs-built_in"><code class="language-hljs powershell">systemctl <span class="hljs-built_in">start</span> mysqld
-systemctl enable mysqld<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre><code class="hljs powershell">systemctl <span class="hljs-built_in">start</span> mysqld
+systemctl enable mysqld</code></pre>
 
 <ol start="6">
 <li>登录mysql</li>
 </ol>
-<pre class="line-numbers language-hljs powershell"><code class="language-hljs powershell">mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre><code class="hljs powershell">mysql</code></pre>
 
 <ol start="7">
 <li>修改密码</li>
 </ol>
-<pre class="line-numbers language-hljs powershell"><span class="hljs-built_in">set</span> password <span class="hljs-keyword">for</span> root@localhost = password(<span class="hljs-string"><code class="language-hljs powershell"><span class="hljs-built_in">set</span> password <span class="hljs-keyword">for</span> root@localhost = password(<span class="hljs-string">&#x27;root&#x27;</span>);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre><code class="hljs powershell"><span class="hljs-built_in">set</span> password <span class="hljs-keyword">for</span> root@localhost = password(<span class="hljs-string">&#x27;root&#x27;</span>);</code></pre>
 
 <ol start="8">
 <li>开放远程连接</li>
 </ol>
-<pre class="line-numbers language-hljs powershell">grant all privileges on *.* to <span class="hljs-string">&#x27;root&#x27;</span><span class="hljs-string"><code class="language-hljs powershell">grant all privileges on *.* to <span class="hljs-string">&#x27;root&#x27;</span><span class="hljs-string">@&#x27;%&#x27; identified by &#x27;root&#x27; with grant option;</span>
-<span class="hljs-string">flush privileges;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre><code class="hljs powershell">grant all privileges on *.* to <span class="hljs-string">&#x27;root&#x27;</span><span class="hljs-string">@&#x27;%&#x27; identified by &#x27;root&#x27; with grant option;</span>
+<span class="hljs-string">flush privileges;</span></code></pre>
 
 
 
@@ -328,6 +326,32 @@ systemctl enable mysqld<span aria-hidden="true" class="line-numbers-rows"><span>
               
             </div>
 
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https://github.com/yakun0622/2020/11/23/mysql-1/';
+        this.page.identifier = '/2020/11/23/mysql-1/';
+      };
+      Fluid.utils.waitElementVisible('disqus_thread', function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + '' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', new Date());
+        (d.head || d.body).appendChild(s);
+      });
+    </script>
+    <noscript>Please enable JavaScript to view the
+      <a target="_blank" href="https://disqus.com/?ref_noscript" rel="nofollow noopener noopener">comments powered by Disqus.</a>
+    </noscript>
+  </div>
+
+
+              </article>
             
           </article>
         </div>

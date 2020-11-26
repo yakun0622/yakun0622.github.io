@@ -59,9 +59,7 @@
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Yakun's blogs" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.2.0"></head>
 
 
 <body>
@@ -186,7 +184,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      253 字
+      250 字
     </span>
   
 
@@ -242,11 +240,11 @@
 <blockquote>
 <p>docker守护进程启动的时候，会默认赋予名字为docker的用户组读写Unix socket的权限<br>因此只要创建docker用户组，并将当前用户加入到docker用户组中，那么当前用户就有权限访问Unix socket了，进而也就可以执行docker相关命令</p>
 </blockquote>
-<pre class="line-numbers language-hljs crmsh">sudo groupadd docker     <span class="hljs-comment"><code class="language-hljs crmsh">sudo groupadd docker     <span class="hljs-comment">#添加docker用户组</span>
+<pre><code class="hljs crmsh">sudo groupadd docker     <span class="hljs-comment">#添加docker用户组</span>
 sudo gpasswd -a $<span class="hljs-keyword">USER</span> <span class="hljs-title">docker</span>     <span class="hljs-comment">#将登陆用户加入到docker用户组中</span>
 newgrp docker     <span class="hljs-comment">#更新用户组</span>
 sudo systemctl restart docker   <span class="hljs-comment"># 重启docker</span>
-docker ps    <span class="hljs-comment">#测试docker命令是否可以使用sudo正常使用</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+docker ps    <span class="hljs-comment">#测试docker命令是否可以使用sudo正常使用</span></code></pre>
 
             </div>
             <hr>
@@ -292,6 +290,32 @@ docker ps    <span class="hljs-comment">#测试docker命令是否可以使用sud
               
             </div>
 
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https://github.com/yakun0622/2020/11/23/docker-1/';
+        this.page.identifier = '/2020/11/23/docker-1/';
+      };
+      Fluid.utils.waitElementVisible('disqus_thread', function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + '' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', new Date());
+        (d.head || d.body).appendChild(s);
+      });
+    </script>
+    <noscript>Please enable JavaScript to view the
+      <a target="_blank" href="https://disqus.com/?ref_noscript" rel="nofollow noopener noopener">comments powered by Disqus.</a>
+    </noscript>
+  </div>
+
+
+              </article>
             
           </article>
         </div>

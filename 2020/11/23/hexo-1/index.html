@@ -59,9 +59,7 @@
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Yakun's blogs" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.2.0"></head>
 
 
 <body>
@@ -233,10 +231,10 @@
 <p>默认情况下，hexo生成的文章标题，也会作为文件名，同时也会作为url路径的一部分<br>这对于中文的编码问题也是件头痛的事情</p>
 </blockquote>
 <p>Hexo官方文档说明:</p>
-<pre class="line-numbers language-hljs shell"><span class="hljs-meta">#</span><span class="bash"><code class="language-hljs shell"><span class="hljs-meta">#</span><span class="bash"> -s 后面的第一个参数表示文件名，可以使用英文</span>
-<span class="hljs-meta">#</span><span class="bash"> -s 后面的第二个参数表示文章标题名，可以使用中文</span>
-<span class="hljs-meta">#</span><span class="bash"> -s, --slug, Post slug. Customize the URL of the post</span>
-hexo new -s &#x27;article&#x27; &#x27;文章标题&#x27;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre><code class="hljs vala"><span class="hljs-meta"># -s 后面的第一个参数表示文件名，可以使用英文</span>
+<span class="hljs-meta"># -s 后面的第二个参数表示文章标题名，可以使用中文</span>
+<span class="hljs-meta"># -s, --slug, Post slug. Customize the URL of the post</span>
+hexo <span class="hljs-keyword">new</span> -s <span class="hljs-string">&#x27;article&#x27;</span> <span class="hljs-string">&#x27;文章标题&#x27;</span></code></pre>
 
 
 
@@ -269,6 +267,12 @@ hexo new -s &#x27;article&#x27; &#x27;文章标题&#x27;<span aria-hidden="true"
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2020/11/26/k8s-inatall-1/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Kubernetes(K8s)-k8s服务安装</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
@@ -284,6 +288,32 @@ hexo new -s &#x27;article&#x27; &#x27;文章标题&#x27;<span aria-hidden="true"
               
             </div>
 
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https://github.com/yakun0622/2020/11/23/hexo-1/';
+        this.page.identifier = '/2020/11/23/hexo-1/';
+      };
+      Fluid.utils.waitElementVisible('disqus_thread', function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + '' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', new Date());
+        (d.head || d.body).appendChild(s);
+      });
+    </script>
+    <noscript>Please enable JavaScript to view the
+      <a target="_blank" href="https://disqus.com/?ref_noscript" rel="nofollow noopener noopener">comments powered by Disqus.</a>
+    </noscript>
+  </div>
+
+
+              </article>
             
           </article>
         </div>

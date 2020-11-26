@@ -59,9 +59,7 @@
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Yakun's blogs" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.2.0"></head>
 
 
 <body>
@@ -186,7 +184,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      57 字
+      61 字
     </span>
   
 
@@ -231,12 +229,12 @@
             <div class="markdown-body">
               <p>网上常见的 apikey <code>0df993c66c0c636e29ecbb5344252a4a</code> 已经在八月被豆瓣封禁。<br>所以需要将旧的key改为<code>054022eaeae0b00e0fc068c0c0a2102a</code></p>
 <p>修改方式：</p>
-<pre class="line-numbers language-hljs shell"><code class="language-hljs shell">vim /calibre-web/app/cps/static/js/get_meta.js<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre><code class="hljs shell">vim /calibre-web/app/cps/static/js/get_meta.js</code></pre>
 <p>找到</p>
-<pre class="line-numbers language-hljs javascript"><span class="hljs-comment"><code class="language-hljs javascript"><span class="hljs-comment">// 找到：</span>
-<span class="hljs-keyword">var</span> apikey = <span class="hljs-string">"0df993c66c0c636e29ecbb5344252a4a"</span>;
+<pre><code class="hljs javascript"><span class="hljs-comment">// 找到：</span>
+<span class="hljs-keyword">var</span> apikey = <span class="hljs-string">&quot;0df993c66c0c636e29ecbb5344252a4a&quot;</span>;
 <span class="hljs-comment">// 改为：</span>
-<span class="hljs-keyword">var</span> apikey = <span class="hljs-string">"054022eaeae0b00e0fc068c0c0a2102a"</span>;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="hljs-keyword">var</span> apikey = <span class="hljs-string">&quot;054022eaeae0b00e0fc068c0c0a2102a&quot;</span>;</code></pre>
 <blockquote>
 <p>如下图所示：</p>
 </blockquote>
@@ -294,6 +292,32 @@
               
             </div>
 
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https://github.com/yakun0622/2020/11/23/calibre-1/';
+        this.page.identifier = '/2020/11/23/calibre-1/';
+      };
+      Fluid.utils.waitElementVisible('disqus_thread', function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + '' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', new Date());
+        (d.head || d.body).appendChild(s);
+      });
+    </script>
+    <noscript>Please enable JavaScript to view the
+      <a target="_blank" href="https://disqus.com/?ref_noscript" rel="nofollow noopener noopener">comments powered by Disqus.</a>
+    </noscript>
+  </div>
+
+
+              </article>
             
           </article>
         </div>

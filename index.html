@@ -43,9 +43,7 @@
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Yakun's blogs" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.2.0"></head>
 
 
 <body>
@@ -183,6 +181,60 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
+        <a href="/2020/11/26/k8s-inatall-1/">Kubernetes(K8s)-k8s服务安装</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/11/26/k8s-inatall-1/">
+          
+          
+            
+          
+          一、环境准备1、机器环境
+节点CPU核数必须是 ：&gt;= 2核 ，否则k8s无法启动
+DNS网络： 最好设置为 本地网络连通的DNS,否则网络不通，无法下载一些镜像
+linux内核： linux内核必须是 4 版本以上，因此必须把linux核心进行升级
+准备3台虚拟机环境，或者是3台阿里云服务器都可。
+k8s-master01: 此机器用来安装k8s-master的操作环境
+k8s-node0
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-11-26 15:53" pubdate>
+              2020-11-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Kubernetes/">Kubernetes</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/k8s/">k8s</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
         <a href="/2020/11/23/hexo-1/">Hexo--分离文章标题和文件名</a>
       </h1>
 
@@ -196,10 +248,10 @@
 默认情况下，hexo生成的文章标题，也会作为文件名，同时也会作为url路径的一部分这对于中文的编码问题也是件头痛的事情
 
 Hexo官方文档说明:
-## -s 后面的第一个参数表示文件名，可以使用英文
+# -s 后面的第一个参数表示文件名，可以使用英文
 # -s 后面的第二个参数表示文章标题名，可以使用中文
 # -s, --slug, Post slug. Customize the URL of the post
-hexo new -s &#x2
+hexo new -s &#x27
         </a>
       </p>
 
@@ -250,17 +302,22 @@ hexo new -s &#x2
           
 下载wget包管理工具
 
-yum -y install yum -y install wget
+yum -y install wget
 
 
 下载mysql的rpm包
 
-wget http://repo.mysql.com/mysql-community-release-el7wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
+wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
 
 
 解压rpm包
 
-rpm
+rpm -ivh mysql-community-release-el7-5.noarch.rpm
+
+
+安装mysql服务
+
+yum -y in
         </a>
       </p>
 
@@ -317,7 +374,7 @@ rpm
 vim /calibre-web/app/cps/static/js/get_meta.js
 找到
 // 找到：
-var apikey = "0df993c66c0c636e29ecb
+var apikey = &quot;0df993c66c0c636e
         </a>
       </p>
 
