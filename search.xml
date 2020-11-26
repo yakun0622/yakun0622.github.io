@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hexo--分离文章标题和文件名</title>
+      <link href="2020/11/23/hexo-1/"/>
+      <url>2020/11/23/hexo-1/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>默认情况下，hexo生成的文章标题，也会作为文件名，同时也会作为url路径的一部分<br>这对于中文的编码问题也是件头痛的事情</p></blockquote><p>Hexo官方文档说明:</p><pre class="line-numbers language-hljs shell"><span class="hljs-meta">#</span><span class="bash"><code class="language-hljs shell"><span class="hljs-meta">#</span><span class="bash"> -s 后面的第一个参数表示文件名，可以使用英文</span><span class="hljs-meta">#</span><span class="bash"> -s 后面的第二个参数表示文章标题名，可以使用中文</span><span class="hljs-meta">#</span><span class="bash"> -s, --slug, Post slug. Customize the URL of the post</span>hexo new -s &#x27;article&#x27; &#x27;文章标题&#x27;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>centos7 yum安装MySQL5.6</title>
+      <link href="2020/11/23/mysql-1/"/>
+      <url>2020/11/23/mysql-1/</url>
+      
+        <content type="html"><![CDATA[<ol><li>下载wget包管理工具</li></ol><pre class="line-numbers language-hljs powershell">yum <span class="hljs-literal">-y</span> install <span class="hljs-built_in"><code class="language-hljs powershell">yum <span class="hljs-literal">-y</span> install <span class="hljs-built_in">wget</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ol start="2"><li>下载mysql的rpm包</li></ol><pre class="line-numbers language-hljs powershell"><span class="hljs-built_in">wget</span> http://repo.mysql.com/mysql<span class="hljs-literal">-community</span><span class="hljs-literal">-release</span><span class="hljs-literal">-el7</span><span class="hljs-literal"><code class="language-hljs powershell"><span class="hljs-built_in">wget</span> http://repo.mysql.com/mysql<span class="hljs-literal">-community</span><span class="hljs-literal">-release</span><span class="hljs-literal">-el7</span><span class="hljs-literal">-5</span>.noarch.rpm<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ol start="3"><li>解压rpm包</li></ol><pre class="line-numbers language-hljs powershell">rpm <span class="hljs-literal">-ivh</span> mysql<span class="hljs-literal">-community</span><span class="hljs-literal">-release</span><span class="hljs-literal">-el7</span><span class="hljs-literal"><code class="language-hljs powershell">rpm <span class="hljs-literal">-ivh</span> mysql<span class="hljs-literal">-community</span><span class="hljs-literal">-release</span><span class="hljs-literal">-el7</span><span class="hljs-literal">-5</span>.noarch.rpm<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ol start="4"><li>安装mysql服务</li></ol><pre class="line-numbers language-hljs powershell">yum <span class="hljs-literal">-y</span> install mysql<span class="hljs-literal"><code class="language-hljs powershell">yum <span class="hljs-literal">-y</span> install mysql<span class="hljs-literal">-server</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ol start="5"><li>启动mysql，开机自启</li></ol><pre class="line-numbers language-hljs powershell">systemctl <span class="hljs-built_in"><code class="language-hljs powershell">systemctl <span class="hljs-built_in">start</span> mysqldsystemctl enable mysqld<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ol start="6"><li>登录mysql</li></ol><pre class="line-numbers language-hljs powershell"><code class="language-hljs powershell">mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ol start="7"><li>修改密码</li></ol><pre class="line-numbers language-hljs powershell"><span class="hljs-built_in">set</span> password <span class="hljs-keyword">for</span> root@localhost = password(<span class="hljs-string"><code class="language-hljs powershell"><span class="hljs-built_in">set</span> password <span class="hljs-keyword">for</span> root@localhost = password(<span class="hljs-string">&#x27;root&#x27;</span>);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ol start="8"><li>开放远程连接</li></ol><pre class="line-numbers language-hljs powershell">grant all privileges on *.* to <span class="hljs-string">&#x27;root&#x27;</span><span class="hljs-string"><code class="language-hljs powershell">grant all privileges on *.* to <span class="hljs-string">&#x27;root&#x27;</span><span class="hljs-string">@&#x27;%&#x27; identified by &#x27;root&#x27; with grant option;</span><span class="hljs-string">flush privileges;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> MySQL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> MySQL </tag>
+            
+            <tag> centos </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>calibre-web 豆瓣API失效解决</title>
+      <link href="2020/11/23/calibre-1/"/>
+      <url>2020/11/23/calibre-1/</url>
+      
+        <content type="html"><![CDATA[<p>网上常见的 apikey <code>0df993c66c0c636e29ecbb5344252a4a</code> 已经在八月被豆瓣封禁。<br>所以需要将旧的key改为<code>054022eaeae0b00e0fc068c0c0a2102a</code></p><p>修改方式：</p><pre class="line-numbers language-hljs shell"><code class="language-hljs shell">vim /calibre-web/app/cps/static/js/get_meta.js<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>找到</p><pre class="line-numbers language-hljs javascript"><span class="hljs-comment"><code class="language-hljs javascript"><span class="hljs-comment">// 找到：</span><span class="hljs-keyword">var</span> apikey = <span class="hljs-string">"0df993c66c0c636e29ecbb5344252a4a"</span>;<span class="hljs-comment">// 改为：</span><span class="hljs-keyword">var</span> apikey = <span class="hljs-string">"054022eaeae0b00e0fc068c0c0a2102a"</span>;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>如下图所示：</p></blockquote><p><img src="https://img-blog.csdnimg.cn/2020101317514998.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ExNTU2Mjc0NDg1,size_16,color_FFFFFF,t_70#pic_center=800x" alt="在这里插入图片描述"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> calibre </tag>
+            
+            <tag> NAS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>pm2运行Python</title>
+      <link href="2020/11/23/pm2-1/"/>
+      <url>2020/11/23/pm2-1/</url>
+      
+        <content type="html"><![CDATA[<p>使用pm2运行Python命令：</p><pre class="line-numbers language-hljs livecodeserver"><span class="hljs-comment"><code class="language-hljs livecodeserver"><span class="hljs-comment"># --interpreter指定解释器</span>pm2 <span class="hljs-built_in">start</span> main.py -x <span class="hljs-comment">--interpreter python3</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> pm2 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>docker permission denied</title>
+      <link href="2020/11/23/docker-1/"/>
+      <url>2020/11/23/docker-1/</url>
+      
+        <content type="html"><![CDATA[<p>用户权限报错</p><blockquote><p>Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.26/images/create?fromImage=10.211.55.3%3A5000%2Flearn&amp;tag=registry: dial unix /var/run/docker.sock: connect: permission denied</p></blockquote><p>原因：docker进程使用Unix Socket而不是TCP端口。而默认情况下，Unix socket属于root用户，需要root权限才能访问。</p><p><strong>解决方法1</strong></p><blockquote><p>使用sudo获取管理员权限，运行docker命令</p></blockquote><p><strong>解决方法2</strong></p><blockquote><p>docker守护进程启动的时候，会默认赋予名字为docker的用户组读写Unix socket的权限<br>因此只要创建docker用户组，并将当前用户加入到docker用户组中，那么当前用户就有权限访问Unix socket了，进而也就可以执行docker相关命令</p></blockquote><pre class="line-numbers language-hljs crmsh">sudo groupadd docker     <span class="hljs-comment"><code class="language-hljs crmsh">sudo groupadd docker     <span class="hljs-comment">#添加docker用户组</span>sudo gpasswd -a $<span class="hljs-keyword">USER</span> <span class="hljs-title">docker</span>     <span class="hljs-comment">#将登陆用户加入到docker用户组中</span>newgrp docker     <span class="hljs-comment">#更新用户组</span>sudo systemctl restart docker   <span class="hljs-comment"># 重启docker</span>docker ps    <span class="hljs-comment">#测试docker命令是否可以使用sudo正常使用</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> docker </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>

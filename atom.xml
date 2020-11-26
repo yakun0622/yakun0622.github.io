@@ -6,7 +6,7 @@
   <link href="https://github.com/yakun0622/atom.xml" rel="self"/>
   
   <link href="https://github.com/yakun0622/"/>
-  <updated>2020-11-23T10:15:31.000Z</updated>
+  <updated>2020-11-26T05:40:59.000Z</updated>
   <id>https://github.com/yakun0622/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Hexo--分离文章标题和文件名</title>
-    <link href="https://github.com/yakun0622/2020/11/23/1-hexo-1/"/>
-    <id>https://github.com/yakun0622/2020/11/23/1-hexo-1/</id>
+    <link href="https://github.com/yakun0622/2020/11/23/hexo-1/"/>
+    <id>https://github.com/yakun0622/2020/11/23/hexo-1/</id>
     <published>2020-11-23T10:12:58.000Z</published>
-    <updated>2020-11-23T10:15:31.000Z</updated>
+    <updated>2020-11-26T05:40:59.000Z</updated>
     
     
       
@@ -32,7 +32,7 @@
 &lt;p&gt;默认情况下，hexo生成的文章标题，也会作为文件名，同时也会作为url路径的一部分&lt;br&gt;这对于中文的编码问题也是件头痛的事情&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Hexo官方文档说明:&lt;/p&gt;
-&lt;figure</summary>
+&lt;pre</summary>
         
       
     
@@ -47,10 +47,10 @@
   
   <entry>
     <title>centos7 yum安装MySQL5.6</title>
-    <link href="https://github.com/yakun0622/2020/11/23/2-mysql-1/"/>
-    <id>https://github.com/yakun0622/2020/11/23/2-mysql-1/</id>
+    <link href="https://github.com/yakun0622/2020/11/23/mysql-1/"/>
+    <id>https://github.com/yakun0622/2020/11/23/mysql-1/</id>
     <published>2020-11-23T09:58:14.000Z</published>
-    <updated>2020-11-23T10:20:06.000Z</updated>
+    <updated>2020-11-26T05:41:03.000Z</updated>
     
     
       
@@ -60,18 +60,18 @@
     <summary type="html">&lt;ol&gt;
 &lt;li&gt;下载wget包管理工具&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
+&lt;pre class=&quot;line-numbers language-hljs powershell&quot;&gt;yum &lt;span class=&quot;hljs-literal&quot;&gt;-y&lt;/span&gt; install &lt;span</summary>
         
       
     
     
     
-    <category term="Linux" scheme="https://github.com/yakun0622/categories/Linux/"/>
+    <category term="MySQL" scheme="https://github.com/yakun0622/categories/MySQL/"/>
     
     
     <category term="Linux" scheme="https://github.com/yakun0622/tags/Linux/"/>
     
-    <category term="mysql" scheme="https://github.com/yakun0622/tags/mysql/"/>
+    <category term="MySQL" scheme="https://github.com/yakun0622/tags/MySQL/"/>
     
     <category term="centos" scheme="https://github.com/yakun0622/tags/centos/"/>
     
@@ -79,10 +79,10 @@
   
   <entry>
     <title>calibre-web 豆瓣API失效解决</title>
-    <link href="https://github.com/yakun0622/2020/11/23/10-calibre-1/"/>
-    <id>https://github.com/yakun0622/2020/11/23/10-calibre-1/</id>
+    <link href="https://github.com/yakun0622/2020/11/23/calibre-1/"/>
+    <id>https://github.com/yakun0622/2020/11/23/calibre-1/</id>
     <published>2020-11-23T09:49:25.000Z</published>
-    <updated>2020-11-23T10:20:35.000Z</updated>
+    <updated>2020-11-26T05:40:49.000Z</updated>
     
     
       
@@ -95,19 +95,21 @@
     
     
     
-    <category term="NAS" scheme="https://github.com/yakun0622/categories/NAS/"/>
+    <category term="技术随笔" scheme="https://github.com/yakun0622/categories/%E6%8A%80%E6%9C%AF%E9%9A%8F%E7%AC%94/"/>
     
     
     <category term="calibre" scheme="https://github.com/yakun0622/tags/calibre/"/>
+    
+    <category term="NAS" scheme="https://github.com/yakun0622/tags/NAS/"/>
     
   </entry>
   
   <entry>
     <title>pm2运行Python</title>
-    <link href="https://github.com/yakun0622/2020/11/23/4-pm2-1/"/>
-    <id>https://github.com/yakun0622/2020/11/23/4-pm2-1/</id>
+    <link href="https://github.com/yakun0622/2020/11/23/pm2-1/"/>
+    <id>https://github.com/yakun0622/2020/11/23/pm2-1/</id>
     <published>2020-11-23T09:48:08.000Z</published>
-    <updated>2020-11-23T10:20:48.000Z</updated>
+    <updated>2020-11-26T05:41:09.000Z</updated>
     
     
       
@@ -115,7 +117,7 @@
         
         
     <summary type="html">&lt;p&gt;使用pm2运行Python命令：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
+&lt;pre class=&quot;line-numbers language-hljs livecodeserver&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;&lt;code class=&quot;language-hljs</summary>
         
       
     
@@ -128,10 +130,10 @@
   
   <entry>
     <title>docker permission denied</title>
-    <link href="https://github.com/yakun0622/2020/11/23/3-docker-1/"/>
-    <id>https://github.com/yakun0622/2020/11/23/3-docker-1/</id>
+    <link href="https://github.com/yakun0622/2020/11/23/docker-1/"/>
+    <id>https://github.com/yakun0622/2020/11/23/docker-1/</id>
     <published>2020-11-23T09:42:53.000Z</published>
-    <updated>2020-11-23T10:20:18.000Z</updated>
+    <updated>2020-11-26T05:45:48.000Z</updated>
     
     
       

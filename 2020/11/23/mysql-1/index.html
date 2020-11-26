@@ -17,9 +17,25 @@
   <meta name="description" content="">
   <meta name="author" content="Yakun">
   <meta name="keywords" content="">
-  <title>分类 - Hexo - Yakun&#39;s blogs</title>
+  <title>centos7 yum安装MySQL5.6 - Yakun&#39;s blogs</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.5.3/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.1.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+  
 
 
 
@@ -49,7 +65,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -148,9 +164,46 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="分类 - Hexo">
+            <span class="h2" id="subtitle" title="centos7 yum安装MySQL5.6">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-11-23 17:58" pubdate>
+        2020年11月23日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      142 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      2
+       分钟
+    </span>
+  
+
+  
+  
+</div>
 
             
           </div>
@@ -163,40 +216,138 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 1 篇文章</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2020</p>
-    
-    <a href="/2020/11/23/hexo-1/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Hexo--分离文章标题和文件名</span>
-      <time style="float: right;">11-23</time>
-    </a>
-  
-</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">centos7 yum安装MySQL5.6</h1>
+            
+            <div class="markdown-body">
+              <ol>
+<li>下载wget包管理工具</li>
+</ol>
+<pre class="line-numbers language-hljs powershell">yum <span class="hljs-literal">-y</span> install <span class="hljs-built_in"><code class="language-hljs powershell">yum <span class="hljs-literal">-y</span> install <span class="hljs-built_in">wget</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol start="2">
+<li>下载mysql的rpm包</li>
+</ol>
+<pre class="line-numbers language-hljs powershell"><span class="hljs-built_in">wget</span> http://repo.mysql.com/mysql<span class="hljs-literal">-community</span><span class="hljs-literal">-release</span><span class="hljs-literal">-el7</span><span class="hljs-literal"><code class="language-hljs powershell"><span class="hljs-built_in">wget</span> http://repo.mysql.com/mysql<span class="hljs-literal">-community</span><span class="hljs-literal">-release</span><span class="hljs-literal">-el7</span><span class="hljs-literal">-5</span>.noarch.rpm<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol start="3">
+<li>解压rpm包</li>
+</ol>
+<pre class="line-numbers language-hljs powershell">rpm <span class="hljs-literal">-ivh</span> mysql<span class="hljs-literal">-community</span><span class="hljs-literal">-release</span><span class="hljs-literal">-el7</span><span class="hljs-literal"><code class="language-hljs powershell">rpm <span class="hljs-literal">-ivh</span> mysql<span class="hljs-literal">-community</span><span class="hljs-literal">-release</span><span class="hljs-literal">-el7</span><span class="hljs-literal">-5</span>.noarch.rpm<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol start="4">
+<li>安装mysql服务</li>
+</ol>
+<pre class="line-numbers language-hljs powershell">yum <span class="hljs-literal">-y</span> install mysql<span class="hljs-literal"><code class="language-hljs powershell">yum <span class="hljs-literal">-y</span> install mysql<span class="hljs-literal">-server</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol start="5">
+<li>启动mysql，开机自启</li>
+</ol>
+<pre class="line-numbers language-hljs powershell">systemctl <span class="hljs-built_in"><code class="language-hljs powershell">systemctl <span class="hljs-built_in">start</span> mysqld
+systemctl enable mysqld<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<ol start="6">
+<li>登录mysql</li>
+</ol>
+<pre class="line-numbers language-hljs powershell"><code class="language-hljs powershell">mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol start="7">
+<li>修改密码</li>
+</ol>
+<pre class="line-numbers language-hljs powershell"><span class="hljs-built_in">set</span> password <span class="hljs-keyword">for</span> root@localhost = password(<span class="hljs-string"><code class="language-hljs powershell"><span class="hljs-built_in">set</span> password <span class="hljs-keyword">for</span> root@localhost = password(<span class="hljs-string">&#x27;root&#x27;</span>);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol start="8">
+<li>开放远程连接</li>
+</ol>
+<pre class="line-numbers language-hljs powershell">grant all privileges on *.* to <span class="hljs-string">&#x27;root&#x27;</span><span class="hljs-string"><code class="language-hljs powershell">grant all privileges on *.* to <span class="hljs-string">&#x27;root&#x27;</span><span class="hljs-string">@&#x27;%&#x27; identified by &#x27;root&#x27; with grant option;</span>
+<span class="hljs-string">flush privileges;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 
 
 
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/MySQL/">MySQL</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Linux/">Linux</a>
+                    
+                      <a class="hover-with-bg" href="/tags/MySQL/">MySQL</a>
+                    
+                      <a class="hover-with-bg" href="/tags/centos/">centos</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/11/23/hexo-1/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Hexo--分离文章标题和文件名</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/11/23/calibre-1/">
+                        <span class="hidden-mobile">calibre-web 豆瓣API失效解决</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -304,9 +455,15 @@
 
 
 
+  <script  src="https://cdn.staticfile.org/tocbot/4.12.0/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.3.0/anchor.min.js" ></script>
 
 
 
